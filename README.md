@@ -1,5 +1,5 @@
 ![Logo Switcher][header]
-[header]: https://github.com/leanderiversen/logo-switcher/blob/master/assets/banner-1544x500.png "Logo Switcher"
+[header]: https://github.com/leanderiversen/IversenCarpeNoctem/blob/master/assets/banner-1544x500.png "Logo Switcher"
 
 # Logo Switcher
 Logo Switcher is a super lightweight plugin that easily allow the implementation of a chosen logo in your theme. By default, the plugin automatically includes the chosen logo on the login screen, but the plugin behavior can be controlled by a simple filter. To get started, simply download and activate the plugin, then hover over «Appearance» and click on «Customize».
