@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the logo-switcher package.
- * (c) Iversen - Carpe Noctem <info@carpe-noctem.no>
- * 
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 // Block direct access
 if(!defined('ABSPATH'))exit;
 
@@ -19,8 +11,7 @@ if(!defined('ABSPATH'))exit;
 
 if (!class_exists('class_Logo_Switcher')) {
 
-class class_Logo_Switcher
-{
+  class class_Logo_Switcher {
 
     /**
      * Add Theme Customize Support
@@ -129,7 +120,6 @@ class class_Logo_Switcher
                 , esc_url(static::getLogoUrl())
         );
     }
-
-}
+  }
 }
 $Logo_Switcher_Plugin = new class_Logo_Switcher;

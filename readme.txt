@@ -1,4 +1,4 @@
-﻿=== Logo Switcher ===
+=== Logo Switcher ===
 Contributors: leanderiversen
 Tags: logo, switcher, login, image, controller, customizer
 Requires at least: 3.0.1

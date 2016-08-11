@@ -17,7 +17,7 @@
 if(!defined('ABSPATH'))exit;
 
 // Define plugin path
-define( 'LOGO_SWITCHER_PATH', plugin_dir_path( __FILE__ ) );
+if(!defined( 'LOGO_SWITCHER_PATH' ) ) define( 'LOGO_SWITCHER_PATH', plugin_dir_path( __FILE__ ) );
 
 // Include the includes
 include( LOGO_SWITCHER_PATH . 'inc/plugin.php');
@@ -25,7 +25,7 @@ include( LOGO_SWITCHER_PATH . 'inc/helpers.php');
 
 // Load translation
 function logo_switcher_load_textdomain() {
-  load_plugin_textdomain( 'logo-switcher', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+  load_plugin_textdomain( 'logo-switcher', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'logo_switcher_load_textdomain' );
 
