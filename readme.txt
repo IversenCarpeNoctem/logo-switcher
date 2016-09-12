@@ -1,11 +1,11 @@
-=== Logo Switcher ===
+﻿=== Logo Switcher ===
 Contributors: leanderiversen
-Tags: logo, switcher, login, image, controller, customizer
+Tags: logo, switcher, login
 Requires at least: 3.0.1
-Tested up to: 4.5.3
-Stable tag: 1.1.1
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+Tested up to: 4.6.1
+Stable tag: 1.1.3
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Logo Switcher allows you to easily implement your own logo in your Wordpress theme.
 
@@ -46,9 +46,16 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 
 1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Navigate to Appearance->Customize to upload your logo
+3. Navigate to Appearance->Customize to upload your the intended logo
 
 == Changelog ==
+
+= 1.1.3 =
+* Various bugfixes
+* Various minor improvements
+
+= 1.1.2 =
+* Various bugfixes
 
 = 1.1.1 =
 * Updated translations

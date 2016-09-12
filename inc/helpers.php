@@ -3,14 +3,6 @@
 // Block direct access
 if(!defined('ABSPATH'))exit;
 
-/*
- * This file is part of the logo-switcher package.
- * (c) Iversen - Carpe Noctem <info@carpe-noctem.no>
- * 
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 /**
  * Get the logo url
  *
