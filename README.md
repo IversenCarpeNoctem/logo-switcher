@@ -16,17 +16,17 @@ Logo Switcher is a super lightweight plugin that easily allow the implementation
 ```
 <?php 
 
-// print : http://example.com/path/to/logo.png 
+// To print the URL to the logo, i.e. http://www.example.com/wp-content/uploads/YYYY/MM/logo.png
  echo logo_switcher_url();
 
-// print : <img src="http://example.com/path/to/logo.png">    
+// To print the entire img-tag within a link-tag that links to the homepage, i.e. <a href="http://www.example.com/" title="Your Website Name" rel="home"><img src="http://www.example.com/wp-content/uploads/YYYY/MM/logo.png" alt="Your Website Name"></a> 
  logo_switcher_print();
 ```
 To control the plugin behaviour, you can use the following filter:
 
 ```
 <?php
-// in the your theme's functions.php file
+// Add this to your theme's functions.php file to control the plugin behaviour:
 
 add_filter('logo-switcher.options', function(array $default) {
     
@@ -36,3 +36,6 @@ add_filter('logo-switcher.options', function(array $default) {
     return $default;
 });
 ```
+
+## Like the plugin?
+If you like the plugin, please review it! Every review is highly appreciated, but if you want to suggest something, please send an email to info@carpe-noctem.no.
