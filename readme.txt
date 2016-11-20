@@ -1,34 +1,34 @@
 ﻿=== Logo Switcher ===
 Contributors: leanderiversen
-Tags: logo, switcher, login
+Tags: logo, switcher, login, controller
 Requires at least: 3.0.1
-Tested up to: 4.6.1
-Stable tag: 1.1.3
+Tested up to: 4.7
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Logo Switcher allows you to easily implement your own logo in your Wordpress theme.
 
 == Description ==
-Logo Switcher is a super lightweight plugin that easily allow the implementation of a chosen logo in your theme. By default, the plugin automatically includes the chosen logo on the login screen, but the plugin behavior can be controlled by a simple filter. To get started, simply download and activate the plugin, then hover over «Appearance» and click on «Customize».
+Logo Switcher is a super lightweight plugin that easily allow the implementation of a chosen logo in your theme. By default, the plugin automatically includes the chosen logo on the login screen, but the plugin behavior can be controlled by a simple filter. To get started, simply download and activate the plugin, then hover over **Appearance** and click on **Customize**.
 
 = How to use =
 
 `
 <?php 
 
-// print : http://example.com/path/to/logo.png 
- echo logo_switcher_url();
+// To print the URL to the logo, i.e. http://www.example.com/wp-content/uploads/YYYY/MM/logo.png
+   echo logo_switcher_url();
 
-// print : <img src="http://example.com/path/to/logo.png">    
- logo_switcher_print();
+// To print the entire img-tag within a link-tag that links to the homepage, i.e. <a href="http://www.example.com/" title="Your Website Name" rel="home"><img src="http://www.example.com/wp-content/uploads/YYYY/MM/logo.png" alt="Your Website Name"></a>		
+   logo_switcher_print();
 `
 
 To control the plugin behaviour, you can use the following filter:
 
 `
 <?php
-// in the your theme's functions.php file
+// Add this to your theme's functions.php file to control the plugin behaviour: 
 
 add_filter('logo-switcher.options', function(array $default) {
     
@@ -45,14 +45,19 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Navigate to Appearance->Customize to upload your the intended logo
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Navigate to **Appearance**, then click on **Customize** to upload your logo. Note that this will only add the logo to the login page of your website. To include the logo on your actual website, use one of the functions provided under "How to use".
 
 == Changelog ==
 
+= 1.1.4 =
+* Updated the readme and made it more understandable
+* The plugin is now compatible with version 4.7 of WordPress
+
 = 1.1.3 =
 * Various bugfixes
-* Various minor improvements
+* Updated translations
+* Compatible up to version 4.7-alpha-38618 of Wordpress
 
 = 1.1.2 =
 * Various bugfixes

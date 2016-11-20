@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Switcher\n"
-"POT-Creation-Date: 2016-09-12 16:54+0200\n"
-"PO-Revision-Date: 2016-09-12 16:34+0100\n"
+"POT-Creation-Date: 2016-09-18 11:29+0100\n"
+"PO-Revision-Date: 2016-09-18 11:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -20,52 +20,17 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/plugin.php:36
+#: inc/plugin.php:33
 msgid "Choose your logo"
 msgstr "Velg din logo"
 
-#: inc/plugin.php:38
+#: inc/plugin.php:35
 msgid ""
 "Note: Depending on the current theme setting, the choosen logo might be used "
 "on the login page."
 msgstr ""
 "Avhengig av hvilke innstillinger temaet ditt har, kan det hende at denne "
 "logoen blir brukt på innloggingssiden. "
-
-#: inc/wp-dismissible-notices-handler/handler.php:98
-#, php-format
-msgid ""
-"The library can not be used because your version of WordPress is too old. "
-"You need version %s at least."
-msgstr ""
-"Dette biblioteket kan ikke brukes, fordi din version av Wordpress er for "
-"gammel. Du trenger minst version %s."
-
-#: inc/wp-dismissible-notices-handler/handler.php:111
-#, php-format
-msgid ""
-"The library can not be used because your version of PHP is too old. You need "
-"version %s at least."
-msgstr ""
-"Dette biblioteket kan ikke brukes, fordi din version av PHP er for gammel. "
-"Du trenger minst version %s."
-
-#: inc/wp-dismissible-notices-handler/handler.php:231
-msgid "Dismissible Notices Handler Error:"
-msgstr ""
-
-#: inc/wp-dismissible-notices-handler/handler.php:313
-#, php-format
-msgid "A notice with the ID %s has already been registered."
-msgstr ""
-
-#: init.php:39
-msgid ""
-"Thanks for installing Logo Switcher! Tell us your opinion on the plugin's "
-"Wordpress page."
-msgstr ""
-"Takk for at du installerte Logoveksler! Fortell oss din mening på utvidelsen "
-"sin Wordpress-side."
 
 #. Plugin Name of the plugin/theme
 msgid "Logo Switcher"
@@ -96,17 +61,3 @@ msgstr "https://github.com/IversenCarpeNoctem"
 
 #~ msgid "https://github.com/leanderiversen"
 #~ msgstr "https://github.com/leanderiversen"
-
-#~ msgid "Hide notice"
-#~ msgstr "Gjem melding"
-
-#~ msgid ""
-#~ "Thanks for installing Logo Switcher! Tell us your opinion on the plugins "
-#~ "Wordpress page."
-#~ msgstr "Takk for at du installerte Logoveksler! Fortell oss om din mening "
-
-#~ msgid "Hide Notice"
-#~ msgstr "Den er grei"
-
-#~ msgid "<a href=\"%1$s\">Hide Notice</a>"
-#~ msgstr "<a href=\"%1$s\">Den er grei!</a>"

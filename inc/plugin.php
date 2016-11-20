@@ -1,11 +1,8 @@
 <?php
 
 /*
- * This file is part of the logo-switcher package.
- * (c) Iversen - Carpe Noctem <info@carpe-noctem.no>
- * 
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * This file is part of the Logo Switcher package by Iversen - Carpe Noctem.
+ *
  */
 
 // Block direct access
@@ -129,6 +126,7 @@ class class_Logo_Switcher
                 , esc_url(static::getLogoUrl())
         );
     }
+
   }
 }
 $Logo_Switcher_Plugin = new class_Logo_Switcher;

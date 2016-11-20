@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Logo Switcher\n"
-"POT-Creation-Date: 2016-09-12 16:44+0200\n"
+"POT-Creation-Date: 2016-09-18 11:22+0100\n"
 "PO-Revision-Date: 2016-07-30 03:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,43 +20,14 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/plugin.php:36
+#: inc/plugin.php:33
 msgid "Choose your logo"
 msgstr ""
 
-#: inc/plugin.php:38
+#: inc/plugin.php:35
 msgid ""
 "Note: Depending on the current theme setting, the choosen logo might be used "
 "on the login page."
-msgstr ""
-
-#: inc/plugin.php:133
-msgid ""
-"Thanks for installing Logo Switcher! Tell us your opinion on the plugin's "
-"Wordpress page."
-msgstr ""
-
-#: inc/wp-dismissible-notices-handler/handler.php:98
-#, php-format
-msgid ""
-"The library can not be used because your version of WordPress is too old. "
-"You need version %s at least."
-msgstr ""
-
-#: inc/wp-dismissible-notices-handler/handler.php:111
-#, php-format
-msgid ""
-"The library can not be used because your version of PHP is too old. You need "
-"version %s at least."
-msgstr ""
-
-#: inc/wp-dismissible-notices-handler/handler.php:231
-msgid "Dismissible Notices Handler Error:"
-msgstr ""
-
-#: inc/wp-dismissible-notices-handler/handler.php:313
-#, php-format
-msgid "A notice with the ID %s has already been registered."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
