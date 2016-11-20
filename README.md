@@ -6,8 +6,8 @@ Logo Switcher is a super lightweight plugin that easily allow the implementation
 
 ## Installation
 1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Navigate to Appearance->Customize to upload your the intended logo
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Navigate to **Appearance**, then click on **Customize** to upload your logo. Note that this will only add the logo to the login page of your website. To include the logo on your actual website, use one of the functions provided under "How to use".
 
 
 ## How to use
