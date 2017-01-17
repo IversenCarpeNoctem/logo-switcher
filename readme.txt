@@ -2,8 +2,8 @@
 Contributors: leanderiversen
 Tags: logo, switcher, login, controller
 Requires at least: 3.0.1
-Tested up to: 4.7
-Stable tag: 1.1.4
+Tested up to: 4.7.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,11 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 3. Navigate to **Appearance**, then click on **Customize** to upload your logo. Note that this will only add the logo to the login page of your website. To include the logo on your actual website, use one of the functions provided under "How to use".
 
 == Changelog ==
+
+= 1.2 =
+* New options page located under the "General" settings, which allows you to easily switch on or off the logo on the login screen
+* Updated translations with better explanations
+* Various minor improvements
 
 = 1.1.4 =
 * Updated the readme and made it more understandable

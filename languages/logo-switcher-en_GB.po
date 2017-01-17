@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Switcher\n"
-"POT-Creation-Date: 2016-09-18 11:27+0100\n"
-"PO-Revision-Date: 2016-09-18 11:27+0100\n"
+"POT-Creation-Date: 2017-01-17 20:51+0000\n"
+"PO-Revision-Date: 2017-01-17 20:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: init.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -20,19 +20,46 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/plugin.php:33
+#: inc/plugin.php:26
 msgid "Choose your logo"
 msgstr "Choose your logo"
 
-#: inc/plugin.php:35
+#: inc/plugin.php:26
 msgid ""
-"Note: Depending on the current theme setting, the choosen logo might be used "
-"on the login page."
+"Note: The logo will replace the default WordPress logo on the login screen. "
+"This can be changed on the settings page of the plugin."
 msgstr ""
-"Note: Depending on the current theme setting, the choosen logo might be used "
-"on the login page."
+"Note: The logo will replace the default WordPress logo on the login screen. "
+"This can be changed on the settings page of the plugin."
+
+#: inc/settings.php:16
+msgid "Settings"
+msgstr "Settings"
+
+#: inc/settings.php:23
+msgid "Show logo on the login screen?"
+msgstr "Show logo on the login screen?"
+
+#: inc/settings.php:38
+msgid "Yes"
+msgstr "Yes"
+
+#: inc/settings.php:39
+msgid "No"
+msgstr "No"
+
+#: inc/settings.php:45
+msgid ""
+"With this settings page, you have full control over your logo on the login "
+"screen. The default option is that your logo is shown, and by turning it "
+"off, the default WordPress logo will appear."
+msgstr ""
+"With this settings page, you have full control over your logo on the login "
+"screen. The default option is that your logo is shown, and by turning it "
+"off, the default WordPress logo will appear."
 
 #. Plugin Name of the plugin/theme
+#: inc/settings.php:52
 msgid "Logo Switcher"
 msgstr "Logo Switcher"
 
@@ -59,9 +86,3 @@ msgstr "Iversen - Carpe Noctem"
 #. Author URI of the plugin/theme
 msgid "https://github.com/IversenCarpeNoctem"
 msgstr "https://github.com/IversenCarpeNoctem"
-
-#~ msgid "https://github.com/leanderiversen/logo-switcher"
-#~ msgstr "https://github.com/leanderiversen/logo-switcher"
-
-#~ msgid "https://github.com/leanderiversen"
-#~ msgstr "https://github.com/leanderiversen"
