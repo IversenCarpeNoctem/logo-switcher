@@ -4,6 +4,7 @@
  * Logo Switcher
  *
  * @author Iversen - Carpe Noctem
+ *
  */
 
 // Block direct access
@@ -11,7 +12,7 @@ if(!defined('ABSPATH'))exit;
 
 if (!class_exists('class_Logo_Switcher')) {
 
-  class class_Logo_Switcher
+  class class_Logo_Switcher 
   {
 
     /**
@@ -31,7 +32,7 @@ if (!class_exists('class_Logo_Switcher')) {
     * 
     * Change the logo in the login page and also change the url href and title
     * 
-    * @return boolean false if the optioh is disabled
+    * @return boolean false if the option is disabled
     */
     public static function addLoginSupport()
     {
@@ -39,20 +40,25 @@ if (!class_exists('class_Logo_Switcher')) {
       if (!$setting['enable-on-login-page'])
         return false;
         add_filter('login_headerurl', function() {
-        return get_bloginfo('url');
-      }
-    );
+          return get_bloginfo('url');
+        }
+      );
         
-    add_filter('login_headertitle', function() {
-      return get_bloginfo('description');
-    });
+      add_filter('login_headertitle', function() {
+        $description = get_bloginfo('description');
+        if (!empty($description)) {
+          return get_bloginfo('description');
+        } else {
+          return get_bloginfo('name');
+        }
+      });
 
     $url = static::getLogoUrl();
     if (!empty($url)) {
       list($width, $height, $type, $attr) = getimagesize($url);
-      print( '<style type="text/css">' . ".login h1 a {background-image: url('{$url}'); background-size: 100%; width:100%; height:{$height}px;}</style>");
+      print( "<style type='text/css'>.login h1 a {background-image: url('{$url}'); background-size: 100%; width:100%; height:{$height}px;}</style>" . PHP_EOL );
     } else {
-        print( '<style type="text/css">.login h1 a {display:none}</style>' );
+        print( '<style type="text/css">.login h1 a {display:none}</style>' . PHP_EOL );
       }
     }
 
@@ -64,9 +70,10 @@ if (!class_exists('class_Logo_Switcher')) {
     public static function getOptions()
     {
       $options = get_option( 'logo_switcher_settings' );
-      if ($options['logo_switcher_state'] == 1) {
+      $option = $options['logo_switcher_state'];
+      if ($option == 1) {
         $state = true;
-      } elseif ($options['logo_switcher_state'] == 2) {
+      } elseif ($option == 2) {
         $state = false;
       } else {
         $state = true;
@@ -76,7 +83,7 @@ if (!class_exists('class_Logo_Switcher')) {
         // path for default logo image 
         'default' => '/logo.png',
         //the logo url (default to home page)
-        'url' => home_url('/'),
+        'url' => esc_url( home_url( '/' ) ),
         // the logo desciption default to (get_bloginfo('name', 'display')) 
         'description' => get_bloginfo('name', 'display'),
         // enable logo display on the login page

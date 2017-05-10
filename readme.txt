@@ -1,9 +1,9 @@
 ﻿=== Logo Switcher ===
 Contributors: leanderiversen
-Tags: logo, switcher, login, controller
+Tags: logo, custom logo, logo controller, logo switcher, login logo
 Requires at least: 3.0.1
-Tested up to: 4.7.1
-Stable tag: 1.2
+Tested up to: 4.7.4
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,21 +24,6 @@ Logo Switcher is a super lightweight plugin that easily allow the implementation
    logo_switcher_print();
 `
 
-To control the plugin behaviour, you can use the following filter:
-
-`
-<?php
-// Add this to your theme's functions.php file to control the plugin behaviour: 
-
-add_filter('logo-switcher.options', function(array $default) {
-    
-    $default['default'] = '/my-logo.png';
-    $default['enable-on-login-page'] = true;
-
-    return $default;
-});
-`
-
 = Like the plugin? =
 If you like the plugin, please review it! Every review is highly appreciated, but if you want to suggest something, please send an email to info@carpe-noctem.no.
 
@@ -49,6 +34,15 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 3. Navigate to **Appearance**, then click on **Customize** to upload your logo. Note that this will only add the logo to the login page of your website. To include the logo on your actual website, use one of the functions provided under "How to use".
 
 == Changelog ==
+
+= 1.2.2 =
+* Streamlined the process of uploading a logo
+* Updated translations
+
+= 1.2.1 =
+* Added functionality to see the uploaded logo directly from the plugin's settings page
+* Updated translations
+* Other minor improvements
 
 = 1.2 =
 * New options page located under the "General" settings, which allows you to easily switch on or off the logo on the login screen
@@ -81,4 +75,5 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 
 == Screenshots ==
 
-1. This is where you should upload the intended logo
+1. This is where you upload the logo you want to use
+2. This is where you change the settings of the plugin to suite your needs

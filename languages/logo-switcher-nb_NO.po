@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Logo Switcher\n"
-"POT-Creation-Date: 2017-01-17 20:45+0000\n"
-"PO-Revision-Date: 2017-01-17 20:50+0000\n"
+"POT-Creation-Date: 2017-05-10 18:20+0100\n"
+"PO-Revision-Date: 2017-05-10 18:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/plugin.php:26
+#: inc/plugin.php:27
 msgid "Choose your logo"
 msgstr "Velg logoen din"
 
-#: inc/plugin.php:26
+#: inc/plugin.php:27
 msgid ""
 "Note: The logo will replace the default WordPress logo on the login screen. "
 "This can be changed on the settings page of the plugin."
@@ -33,34 +33,47 @@ msgstr ""
 "innloggingssiden. Dette kan endres på siden med innstillingene til "
 "utvidelsen."
 
-#: inc/settings.php:16
+#: inc/settings.php:27
 msgid "Settings"
 msgstr "Innstillinger"
 
-#: inc/settings.php:23
+#: inc/settings.php:34
 msgid "Show logo on the login screen?"
 msgstr "Vise logoen på innloggingssiden?"
 
-#: inc/settings.php:38
+#: inc/settings.php:49
 msgid "Yes"
 msgstr "Ja"
 
-#: inc/settings.php:39
+#: inc/settings.php:50
 msgid "No"
 msgstr "Nei"
 
-#: inc/settings.php:45
+#: inc/settings.php:56
 msgid ""
 "With this settings page, you have full control over your logo on the login "
 "screen. The default option is that your logo is shown, and by turning it "
 "off, the default WordPress logo will appear."
 msgstr ""
 "Med denne innstillingssiden har du full kontroll over logoen din på "
-"innloggingssiden. Standard er at logoen vises, og slår den av, vises "
-"standard WordPress-logo."
+"innloggingssiden. Standard er at logoen din vises, men hvis du slår den av, "
+"vises WordPress-logoen."
+
+#: inc/settings.php:61
+msgid "Currently uploaded logo:"
+msgstr "Nåværende logo:"
+
+#: inc/settings.php:68
+#, php-format
+msgid ""
+"You haven't uploaded a logo yet. Click <a href=\"%s\">here</a> to upload "
+"your logo."
+msgstr ""
+"Du har ikke lastet opp en logo enda. Klikk <a href=\"%s\">her</a> for å "
+"laste opp logoen din."
 
 #. Plugin Name of the plugin/theme
-#: inc/settings.php:52
+#: inc/settings.php:75
 msgid "Logo Switcher"
 msgstr "Logo Switcher"
 
@@ -83,3 +96,6 @@ msgstr "Iversen - Carpe Noctem"
 #. Author URI of the plugin/theme
 msgid "https://github.com/IversenCarpeNoctem"
 msgstr "https://github.com/IversenCarpeNoctem"
+
+#~ msgid "You haven't uploaded a logo yet"
+#~ msgstr "Du har ikke lastet opp en logo enda."

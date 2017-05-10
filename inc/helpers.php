@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Logo Switcher
+ *
+ * @author Iversen - Carpe Noctem
+ *
+ */
+
 // Block direct access
 if(!defined('ABSPATH'))exit;
 
