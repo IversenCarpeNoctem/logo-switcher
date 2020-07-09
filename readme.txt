@@ -1,9 +1,10 @@
 ﻿=== Logo Switcher ===
 Contributors: leanderiversen
 Tags: logo, custom logo, logo controller, logo switcher, login logo
-Requires at least: 3.0.1
-Tested up to: 4.7.4
-Stable tag: 1.2.2
+Requires at least: 4.0
+Tested up to: 5.4.2
+Stable tag: 2.1
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,15 +18,18 @@ Logo Switcher is a super lightweight plugin that easily allow the implementation
 `
 <?php 
 
-// To print the URL to the logo, i.e. http://www.example.com/wp-content/uploads/YYYY/MM/logo.png
+// https://www.example.com/wp-content/uploads/YYYY/MM/logo.png
    echo logo_switcher_url();
 
-// To print the entire img-tag within a link-tag that links to the homepage, i.e. <a href="http://www.example.com/" title="Your Website Name" rel="home"><img src="http://www.example.com/wp-content/uploads/YYYY/MM/logo.png" alt="Your Website Name"></a>		
-   logo_switcher_print();
+// <a href="https://www.example.com/" title="Your Website Name" rel="home"><img src="https://www.example.com/wp-content/uploads/YYYY/MM/logo.png" alt="Your Website Name"></a>		
+   logo_switcher_link_tag();
+
+// <img src="https://www.example.com/wp-content/uploads/YYYY/MM/logo.png" class="example-class" alt="Your Website Name">
+   logo_switcher_image_tag($classes = array());
 `
 
 = Like the plugin? =
-If you like the plugin, please review it! Every review is highly appreciated, but if you want to suggest something, please send an email to info@carpe-noctem.no.
+If you like the plugin, please review it. Every review is highly appreciated, but if you have a suggestion on how to make the plugin better, please send an email to info@carpe-noctem.no.
 
 == Installation ==
 
@@ -34,6 +38,18 @@ If you like the plugin, please review it! Every review is highly appreciated, bu
 3. Navigate to **Appearance**, then click on **Customize** to upload your logo. Note that this will only add the logo to the login page of your website. To include the logo on your actual website, use one of the functions provided under "How to use".
 
 == Changelog ==
+= 2.1 =
+* General maintenance and optimisation of the plugin.
+
+= 2.0 =
+* Introduces logo_switcher_image_tag(), which produces the img-tag, with the option to add classes.
+* Introduces logo_switcher_link_tag(), which is an alias of logo_switcher_print().
+* Introduces a cleaner uninstalling process.
+* Compatibility with WordPress 5.0.
+
+= 1.2.3 =
+* Optimisation of the CSS on the "Log In" page.
+* Updated minimum version of WordPress to 4.0 to ensure future compatibility for the plugin.
 
 = 1.2.2 =
 * Streamlined the process of uploading a logo

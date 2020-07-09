@@ -17,7 +17,7 @@ if(!defined('ABSPATH'))exit;
  * @return string
  */
 function logo_switcher_url() {
-    return class_Logo_Switcher::getLogoUrl();
+	return ICN\LogoSwitcher\Plugin::get_logo_url();
 }
 
 /**
@@ -28,5 +28,13 @@ function logo_switcher_url() {
  *
  */
 function logo_switcher_print($path = null, $description = null) {
-    class_Logo_Switcher::printLogo($path, $description);
+	ICN\LogoSwitcher\Plugin::print_link_tag($path, $description);
+}
+
+function logo_switcher_link_tag() {
+	logo_switcher_print();
+}
+
+function logo_switcher_image_tag($classes = []) {
+	ICN\LogoSwitcher\Plugin::print_image_tag($classes);
 }
